@@ -1,4 +1,4 @@
-# H-Spice_T-Spice_L-Edit_HardWare
+# Buffer in RTL Logic
 Overview
 A buffer is a fundamental component in digital circuits, particularly in Register Transfer Level (RTL) logic design. It serves to strengthen the signal, ensuring that it can drive larger loads without degradation. Buffers are essential for maintaining signal integrity, especially in complex circuits where multiple gates are connected.
 
