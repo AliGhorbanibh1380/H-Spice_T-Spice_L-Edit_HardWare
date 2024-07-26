@@ -37,11 +37,13 @@ ol
 ​
  −V 
 il
+
 ![NoiseMargin](https://github.com/user-attachments/assets/42c52e50-8649-4b1b-80fd-4ee35ac4b4f5)
 
 ​
  
 Fan-Out: The fan-out of a buffer indicates how many inputs it can drive. A higher fan-out means that the buffer can connect to more gates without losing signal integrity.
+
 ![FanOut](https://github.com/user-attachments/assets/703c74a9-be44-4228-9326-5177d17c7455)
 
 
@@ -61,7 +63,9 @@ The second graph presents the timing characteristics of the buffer under differe
 The rise and fall times are critical for determining the speed of the buffer. The graph indicates that as the fan-out increases, the response time may also increase, which can affect overall circuit performance.
 Power Analysis
 The third and fourth images provide insights into power consumption during transient analysis. The average power consumption (avgpwr) is calculated for different input conditions (low and high input power).
+
 ![StaticPower](https://github.com/user-attachments/assets/316babc8-3bb1-4a4e-b33b-f9acd04007e3)
+
 ![Power](https://github.com/user-attachments/assets/2e347e6c-c734-46b9-85b7-2490edd14d00)
 
 
