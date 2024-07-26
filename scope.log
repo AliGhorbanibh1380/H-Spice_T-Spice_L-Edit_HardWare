@@ -1,0 +1,72 @@
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+1208+92
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/rtl/buffer.tr0}} 1 openonly
+# PF:5
+wm geometry .sigmgr._PF:5 200x331+865+518
+wm geometry .sigmgr._PF:5 200x331+872+511
+wm geometry .sigmgr._PF:5 200x331+880+506
+wm geometry .sigmgr._PF:5 200x331+887+502
+wm geometry .sigmgr._PF:5 200x331+895+497
+wm geometry .sigmgr._PF:5 200x331+908+489
+wm geometry .sigmgr._PF:5 200x331+923+480
+wm geometry .sigmgr._PF:5 200x331+943+470
+wm geometry .sigmgr._PF:5 200x331+966+458
+wm geometry .sigmgr._PF:5 200x331+989+446
+wm geometry .sigmgr._PF:5 200x331+1014+434
+wm geometry .sigmgr._PF:5 200x331+1048+419
+wm geometry .sigmgr._PF:5 200x331+1067+413
+wm geometry .sigmgr._PF:5 200x331+1088+407
+wm geometry .sigmgr._PF:5 200x331+1106+403
+wm geometry .sigmgr._PF:5 200x331+1116+402
+wm geometry .sigmgr._PF:5 200x331+1126+400
+wm geometry .sigmgr._PF:5 200x331+1134+399
+wm geometry .sigmgr._PF:5 200x331+1139+399
+wm geometry .sigmgr._PF:5 200x331+1146+399
+wm geometry .sigmgr._PF:5 200x331+1150+398
+wm geometry .sigmgr._PF:5 200x331+1153+398
+wm geometry .sigmgr._PF:5 200x331+1155+398
+GrXY:NewGraph
+# Graph0
+pf:read PF:5 v(ina) v(out)
+# WF:5:1 WF:5:2
+Graph addsignal {WF:5:1 WF:5:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {50n 800n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {50n 600n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {100n 600n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal1 Signal0 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:0
+GrMeas:Delay Graph0 Signal1 Signal0 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:1
+Graph:DSel
+GrMeas:Select Graph0 M:0 7
+GrMeas:MoveText Graph0 M:0 7 -45.0 -46.0
+Graph:DSel
+GrMeas:Select Graph0 M:1 4
+GrMeas:MoveText Graph0 M:1 4 89.0 20.0
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph0 M:0 7
+GrMeas:MoveText Graph0 M:0 7 -61.0 -49.0
+Graph:DSel
+GrMeas:Select Graph0 M:1 4
+GrMeas:MoveText Graph0 M:1 4 54.0 32.0
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi8.work.graph0 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/rtl/TimeDelay.png} -format png  -x 0 -y 0 -w 488 -h 368 -colormode color

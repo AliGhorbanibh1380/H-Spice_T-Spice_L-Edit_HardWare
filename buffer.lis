@@ -1,0 +1,159 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\administrator\desktop\tamrin for sending\tamrin 2\rtl\buf
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   Administrator        HOSTNAME: IK-PC 
+  lic: HOSTID: 000000000000         PID:      944 
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid 000000000000 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *buffer
+
+  ******  bjt   model parameters tnom=  25.000 temp=  25.000 *****
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:npn      model type:npn   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf=  25.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=   1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf=   0.    volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb=   0.    ohms         rbm=   0.    ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   4.00p farad        cjs=   0.    farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf=   0.    secs   
+       tr=   0.    secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+  **info** (c:\users\administrator\desktop\tamrin for sending\tamrin 2\rtl\buffer.sp:5) DC voltage reset to initial transient source value              in source        0:vina                new dc=  0.0000D+00
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *buffer
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:base21  =  50.0010n 0:ina     =   0.      0:out     =   5.0000 
+ +0:vcc     =   5.0000 
+
+ ******  
+ *buffer
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+   ivcc= -2.3784E-03  from=  1.0000E-11     to=  6.0000E-07
+   avgwrs=  1.1892E-02
+   avgpwrt=  1.2966E-02  from=  1.0000E-11     to=  6.0000E-07
+x
+
+        time    voltage    
+                    out    
+    0.            5.0000   
+  100.00000n     75.2524m  
+  200.00000n     94.5114m  
+  300.00000n      4.9932   
+  400.00000n      4.9982   
+  500.00000n      4.9954   
+  600.00000n     77.9658m  
+y
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *buffer
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     4
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       5 # elements   =       5
+  # resistors   =       2 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       1
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           9
+  dc sweep           0.00          51         143
+  transient          0.03           7         247          67 rev=         9
+  readin             0.06
+  errchk             0.00
+  setup              0.02
+  output             0.00
+
+
+           total memory used          164  kbytes
+           total cpu time            0.14 seconds
+           total elapsed time        0.15 seconds
+           job started at     23:27:34 06/18/2014
+           job ended   at     23:27:34 06/18/2014
+
+
+  lic: Release hspice token(s) 

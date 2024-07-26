@@ -1,0 +1,135 @@
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+1208+92
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/rtl/buffer.tr0}} 1 openonly
+# PF:5
+wm geometry .sigmgr._PF:5 200x331+859+516
+wm geometry .sigmgr._PF:5 200x331+860+511
+wm geometry .sigmgr._PF:5 200x331+861+501
+wm geometry .sigmgr._PF:5 200x331+862+492
+wm geometry .sigmgr._PF:5 200x331+863+481
+wm geometry .sigmgr._PF:5 200x331+863+472
+wm geometry .sigmgr._PF:5 200x331+863+458
+wm geometry .sigmgr._PF:5 200x331+863+443
+wm geometry .sigmgr._PF:5 200x331+863+426
+wm geometry .sigmgr._PF:5 200x331+861+402
+wm geometry .sigmgr._PF:5 200x331+861+376
+wm geometry .sigmgr._PF:5 200x331+861+360
+wm geometry .sigmgr._PF:5 200x331+861+337
+wm geometry .sigmgr._PF:5 200x331+860+320
+wm geometry .sigmgr._PF:5 200x331+860+309
+wm geometry .sigmgr._PF:5 200x331+859+297
+wm geometry .sigmgr._PF:5 200x331+859+289
+wm geometry .sigmgr._PF:5 200x331+858+284
+wm geometry .sigmgr._PF:5 200x331+858+281
+wm geometry .sigmgr._PF:5 200x331+858+278
+wm geometry .sigmgr._PF:5 200x331+858+277
+wm geometry .sigmgr._PF:5 200x331+858+276
+wm geometry .sigmgr._PF:5 200x331+858+275
+wm geometry .sigmgr._PF:5 200x331+857+275
+wm geometry .sigmgr._PF:5 200x331+857+274
+GrXY:NewGraph
+# Graph0
+pf:read PF:5 v(ina) v(out)
+# WF:5:1 WF:5:2
+Graph addsignal {WF:5:1 WF:5:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal0 Signal1 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:0
+GrMeas:DelMfromMenu Graph0 M:0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal1 Signal0 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:1
+GrMeas:DelMfromMenu Graph0 M:1
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {800n 200u exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {200u 800u exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {100u 800u exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {0 800u exact} -gridvis n -label t(s) -scale lin -unitscale auto
+GrXY:NewGraph
+# Graph1
+pf:read PF:5 v(ina)
+# WF:5:1
+Graph addsignal WF:5:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:5 v(out)
+# WF:5:2
+Graph addsignal WF:5:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {200n 800n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {100n 800n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+GrMeas:Delay Graph1 Signal0 Signal1 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:0
+GrMeas:DelMfromMenu Graph1 M:0
+Mdi:ArrangeIcons
+GrMeas:Delay Graph1 Signal1 Signal0 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:1
+GrMeas:Delay Graph1 Signal0 Signal1 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:2
+Mdi:ArrangeIcons
+GrMeas:DelMfromMenu Graph1 M:2
+GrMeas:Delay Graph1 Signal0 Signal1 rising either default default default default 0.5 0.5 xyrangeAll
+# M:3
+GrMeas:DelMfromMenu Graph1 M:3
+GrMeas:Delay Graph1 Signal0 Signal1 rising same default default default default 0.5 0.5 xyrangeAll
+# M:4
+GrMeas:DelMfromMenu Graph1 M:4
+GrMeas:Delay Graph1 Signal0 Signal1 falling same default default default default 0.5 0.5 xyrangeAll
+# M:5
+GrMeas:DelMfromMenu Graph1 M:5
+GrMeas:Delay Graph1 Signal0 Signal1 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:6
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+wm geometry .sigmgr 367x200+1203+90
+wm geometry .sigmgr 367x200+1199+89
+wm geometry .sigmgr 367x200+1194+86
+wm geometry .sigmgr 367x200+1186+84
+wm geometry .sigmgr 367x200+1177+81
+wm geometry .sigmgr 367x200+1164+78
+wm geometry .sigmgr 367x200+1147+74
+wm geometry .sigmgr 367x200+1127+70
+wm geometry .sigmgr 367x200+1105+68
+wm geometry .sigmgr 367x200+1081+67
+wm geometry .sigmgr 367x200+1050+67
+wm geometry .sigmgr 367x200+1019+67
+wm geometry .sigmgr 367x200+991+69
+wm geometry .sigmgr 367x200+970+71
+wm geometry .sigmgr 367x200+952+73
+wm geometry .sigmgr 367x200+931+75
+wm geometry .sigmgr 367x200+914+77
+wm geometry .sigmgr 367x200+901+78
+wm geometry .sigmgr 367x200+891+80
+wm geometry .sigmgr 367x200+882+81
+Mdi:ArrangeIcons
+wm geometry . 1531x784+-8+-8
+Mdi:ArrangeIcons
+wm geometry . 1531x768+-8+0

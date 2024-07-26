@@ -1,0 +1,5 @@
+*NPN MODEL
+.MODEL NPN NPN
++BF = 25
++CJC = 2PF
++CJE = 4PF

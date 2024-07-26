@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "23:27:34 06/18/2014 "
+* "netlist" "c:\users\administrator\desktop\tamrin for sending\tamrin 2\rtl\buffer.sp "
+* "runtitle" "*buffer"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ base21 =  50.0010n       
++ ina =   0.            
++ out =   5.0000        
++ vcc =   5.0000        
+***   END: Saved Operating Point ***                     
