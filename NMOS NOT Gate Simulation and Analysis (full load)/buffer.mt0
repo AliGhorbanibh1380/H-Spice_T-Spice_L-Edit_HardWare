@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP1 32-BIT'
+.TITLE '** --------------------------------------**'
+ ivdd             avgpwrs          avgpwrt          temper            
+ alter#            
+ -1.858e-03        2.043e-03        2.044e-03         25.0000         
+ 1                 

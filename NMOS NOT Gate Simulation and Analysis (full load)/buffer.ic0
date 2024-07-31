@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "16:45:15 01/19/2014 "
+* "netlist" "c:\users\administrator\desktop\tamrin for sending\tamrin 2\nmos\bareshba\buffer.sp "
+* "runtitle" "** --------------------------------------**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ ina =   0.            
++ out = 866.5256m       
++ out1 = 337.0551m       
++ out2 = 337.0551m       
++ out3 = 337.0551m       
++ vdd =   1.1000        
+***   END: Saved Operating Point ***                     
