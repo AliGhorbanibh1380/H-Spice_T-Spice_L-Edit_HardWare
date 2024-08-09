@@ -45,12 +45,16 @@ Delay 2: 1.92621 ps
 
 ### Voltage Transfer Characteristics (VTC)
 The fourth image depicts the voltage transfer characteristics of the NOT gate. The slope and maximum/minimum voltage values are crucial for understanding the performance of the gate.
+
 ![image](https://github.com/user-attachments/assets/fe5f1bbf-cf62-43f9-9174-3e1d353ed2dd)
+
 
 
 ### Simulation Results
 The fifth image shows the simulation results, including average power consumption values:
+
 ![image](https://github.com/user-attachments/assets/2183e511-9772-4c2b-b0ad-6f7d1093d3e9)
+
 
 
 Low Static Power: 0.0000001 W
