@@ -1,0 +1,13 @@
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+502+100
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Mehran2/TAMRIN 3/CMOS32nm/New folder/buffer.tr0}} 1 openonly
+# PF:3
+GrXY:NewGraph
+# Graph5
+pf:read PF:3 v(ina) v(inb) v(inc) v(carry) v(sum)
+# WF:3:1 WF:3:2 WF:3:3 WF:3:4 WF:3:5
+Graph addsignal {WF:3:1 WF:3:2 WF:3:3 WF:3:4 WF:3:5} -region {new new new new new} -yview {real(y) real(y) real(y) real(y) real(y)} -xview {real(x) real(x) real(x) real(x) real(x)} -tracehi {2 2 2 2 2}
+# Signal0 Signal1 Signal2 Signal3 Signal4
+ScopeSigMgr:Unload 0 {{(3) buffer.tr0}}

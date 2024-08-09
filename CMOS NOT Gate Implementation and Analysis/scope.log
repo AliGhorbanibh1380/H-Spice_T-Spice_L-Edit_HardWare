@@ -1,0 +1,513 @@
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+1212+92
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:5
+GrXY:NewGraph
+# Graph0
+pf:read PF:5 v(ina) v(out)
+# WF:5:1 WF:5:2
+Graph addsignal {WF:5:1 WF:5:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -region 1 -rgnindex 1
+Mdi:ArrangeIcons
+wm geometry . 1536x784+-4+-10
+Mdi:ArrangeIcons
+wm geometry . 1536x784+-3+-11
+Mdi:ArrangeIcons
+wm geometry . 1536x784+-2+-11
+Mdi:ArrangeIcons
+wm geometry . 1536x784+-2+-12
+Mdi:ArrangeIcons
+wm geometry . 1536x784+-2+0
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {20N 80n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {10N 80n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Mdi:ArrangeIcons
+Graph axisconfig AxisY(0,0) -rang {-0.5 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal6 Signal7 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:0
+Mdi:ArrangeIcons
+GrMeas:DelMfromMenu Graph0 M:0
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal6 Signal7 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:1
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph0 M:1 4
+GrMeas:DelMfromMenu Graph0 M:1
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph axisconfig AxisX(0) -rang {15N 80n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+GrMeas:Delay Graph0 Signal6 Signal7 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:2
+Graph:DSel
+GrMeas:Select Graph0 M:2 4
+GrMeas:DelMfromMenu Graph0 M:2
+GrMeas:Delay Graph0 Signal6 Signal7 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:3
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:9
+GrXY:NewGraph
+# Graph1
+pf:read PF:9 v(ina) v(out)
+# WF:9:1 WF:9:2
+Graph addsignal {WF:9:1 WF:9:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 1 -rgnindex 1
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph itemselect AxisX(0) add
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {20N 80n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {20n 70N exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Graph axisconfig AxisY(0,0) -rang {-0.5 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+GrMeas:Delay Graph1 Signal1 Signal0 falling opposite default default default default 0.5 0.5 xyrangeAll
+# M:0
+GrMeas:Delay Graph1 Signal1 Signal0 rising opposite default default default default 0.5 0.5 xyrangeAll
+# M:1
+Graph:DSel
+GrMeas:Select Graph1 M:1 7
+GrMeas:MoveText Graph1 M:1 7 72.0 -7.0
+Graph:DSel
+GrMeas:Select Graph1 M:0 7
+GrMeas:MoveText Graph1 M:0 7 -78.0 -9.0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi9.work.graph1 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/Delay.png} -format png  -x 0 -y 0 -w 488 -h 368 -colormode color
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+Graph1 delsignal Signal0
+Graph1 delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:10
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.sw0}} 1 openonly
+# PF:11
+pf:read PF:11 v(ina)
+# WF:11:1
+Graph addsignal WF:11:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:11 v(out)
+# WF:11:2
+Graph addsignal WF:11:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal0 rem
+Graph delsignal Signal0
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph:DSel
+Mdi:ArrangeIcons
+Graph axisconfig AxisY(0,0) -rang {1.3 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {0 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {-0.1 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {-0.01 1.5 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph axisconfig AxisY(0,0) -rang {-10.0m 1.3 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Graph:Select Graph1
+Graph:DSel
+Mdi:ArrangeIcons
+GrMeas:Slope Graph1 Signal1 {} none xyrangeAll
+# M:2
+Graph:DSel
+GrMeas:Select Graph1 M:2 0
+GrMeas:MovePoint Graph1 M:2 0 0.34331387647424 1.01535010811
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1933210729669 0.57389505502359} {0.17306 0.5286}}
+Graph:DSel
+GrMeas:Select Graph1 M:2 0
+GrMeas:MovePoint Graph1 M:2 0 0.37237352839148 0.98830002511472
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1632232209543 0.80070926643276} {0.2552 0.566}}
+Graph:DSel
+GrMeas:Select Graph1 M:2 0
+GrMeas:MovePoint Graph1 M:2 0 0.37689088243726 0.98365619048401
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.0901950480326 0.96410323776423} {0.27616 0.49832}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.0204045445711 0.94415840304943} {0.307236 0.443796}}
+Graph:DSel
+GrMeas:Select Graph1 M:2 0
+GrMeas:MovePoint Graph1 M:2 0 0.3714470540391 0.98925241525577
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.30212780048039 689.56655758967u} {0.49833 0.88885}}
+GrMeas:Slope Graph1 Signal1 {} none xyrangeAll
+# M:3
+Graph:DSel
+GrMeas:Select Graph1 M:3 0
+GrMeas:MovePoint Graph1 M:3 0 0.66790500625662 0.14279763831824
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+GrMeas:Levels Graph1 Signal1 {Minimum Maximum} xyrangeAll
+# M:4
+GrMeas:AtX Graph1 Signal1 {} xyrangeVisible
+# M:5
+Graph:DSel
+GrMeas:Select Graph1 M:5 0 1
+GrMeas:MovePoint Graph1 M:5 0 0.36769057622885 0.99299402225039
+Graph:DSel
+GrMeas:Select Graph1 M:5 0 2
+GrMeas:MoveText Graph1 M:5 0 -26 87
+Graph:DSel
+GrMeas:AtX Graph1 Signal1 {} xyrangeVisible
+# M:6
+Graph:DSel
+GrMeas:Select Graph1 M:6 0 1
+GrMeas:MovePoint Graph1 M:6 0 0.66219320916872 0.1487892768666
+GrMeas:MovePoint Graph1 M:6 0 0.66669359715208 0.14406848190226
+GrMeas:MoveText Graph1 M:6 0 78 -60
+Mdi:Resize 676 542
+Mdi:Move 5 5
+Graph:DSel
+Graph itemselect AxisY(0,0) add
+# AxisY(0,0)
+Graph axisconfig AxisY(0,0) -rang {0.0 1.3 exact} -gridvis n -label (V) -scale lin -unitscale auto
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi9.work.graph1 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/NoiseMargin.png} -format png  -x 0 -y 0 -w 674 -h 538 -colormode color
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(4) buffer.sw0}}
+Graph1 delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:12
+pf:read PF:12 1TPOWRD(power)
+# WF:12:1
+Graph addsignal WF:12:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:12 v(ina)
+# WF:12:2
+Graph addsignal WF:12:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph1
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0025500898590712 0.0023294186511816} {39.658n 50.972n}}
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
+Graph:DSel
+pf:read PF:12 v(out)
+# WF:12:3
+Graph addsignal WF:12:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 rem
+Graph delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi9.work.graph1 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/Power.png} -format png  -x 0 -y 0 -w 674 -h 538 -colormode color
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+pf:read PF:12 v(ina)
+# WF:12:2
+Graph addsignal WF:12:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:12 v(out)
+# WF:12:3
+Graph addsignal WF:12:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Mdi:ArrangeIcons
+Graph:DSel
+pf:read PF:12 1TPOWRD(power)
+# WF:12:1
+Graph addsignal WF:12:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:12 i(vina)
+# WF:12:4
+Graph addsignal WF:12:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:Select Graph1
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph delsignal selected
+Graph:DSel
+pf:read PF:13 i(vina)
+# WF:13:1
+Graph addsignal WF:13:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph:DSel
+pf:read PF:13 v(ina)
+# WF:13:2
+Graph addsignal WF:13:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:13 v(out)
+# WF:13:3
+Graph addsignal WF:13:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+Graph1 delsignal Signal2
+Graph1 delsignal Signal3
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:15
+pf:read PF:15 v(ina)
+# WF:15:1
+Graph addsignal WF:15:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:15 v(out)
+# WF:15:2
+Graph addsignal WF:15:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Mdi:ArrangeIcons
+ScopeSigMgr:Reload 0 {{(4) buffer.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:17
+pf:read PF:17 v(out)
+# WF:17:1
+Graph addsignal WF:17:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig Signal4 -region 1 -rgnindex 1
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.2525807635682 0.18934676191859} {12.214n 45.567n}}
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.306912690589 0.25370919838892} {23.68039852n 49.07774604n}}
+ScopeSigMgr:Unload 0 {{(5) buffer.tr0}}
+Graph1 delsignal Signal4
+ScopeSigMgr:Unload 0 {{(4) buffer.tr0}}
+Graph1 delsignal Signal2
+Graph1 delsignal Signal3
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel 0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:18
+Graph:DSel
+pf:read PF:18 v(out)
+# WF:18:1
+Graph addsignal WF:18:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:19
+pf:read PF:19 v(out)
+# WF:19:1
+Graph addsignal WF:19:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:20
+Graph:DSel
+pf:read PF:20 v(out)
+# WF:20:1
+Graph addsignal WF:20:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -region 0 -rgnindex 2
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:21
+Graph:DSel
+pf:read PF:21 v(out)
+# WF:21:1
+Graph addsignal WF:21:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig Signal3 -region 0 -rgnindex 3
+Graph:DSel
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.20845951200148 -0.3673064052113} {37.153n 77.238n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.079211074638438 -0.11239627158155} {41.65001317n 59.53142879n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.018197191893346 -0.089168993488545} {42.55305002n 55.03608643n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.019677901373063 -0.057130215861674} {44.6401192n 56.17806768n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.014965980988766 0.012700672462027} {45.34893515n 45.62458579n}}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.03384197973203 -0.10773980318915} {36.694n 63.621n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.036471073919108 -0.057916781361676} {33.8022216n 60.2646836n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.01105439096857 -0.031892083184187} {28.367966n 70.1881069n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0034821252786689 -0.019737287120404} {35.1017175n 74.0865946n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0041937703831458 -0.0044781138207762} {32.3845897n 58.8470518n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0040272938151928 -616.58866462172u} {31.53282202n 50.21772862n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0024420891171714 -516.9701458812u} {35.78203754n 54.99082003n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.0019460022795517 -0.0015841035079497} {37.06262304n 60.75345477n}}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/buffer.tr0}} 1 openonly
+# PF:22
+Graph:DSel
+pf:read PF:22 v(out)
+# WF:22:1
+Graph addsignal WF:22:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig Signal4 -region 0 -rgnindex 4
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1900932069216 0.73231210880983} {18.487n 46.332n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1307822390675 0.95498485860702} {19.22592854n 45.16913912n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1166496243101 1.0496342470608} {26.89331597n 46.782805n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1102465882247 1.0787210445609} {30.66191357n 48.10346549n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1084768159618 1.0826381405787} {35.23374053n 45.56097522n}}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi9.work.graph1 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin 2/cmos/FANOUT.png} -format png  -x 0 -y 0 -w 674 -h 538 -colormode color

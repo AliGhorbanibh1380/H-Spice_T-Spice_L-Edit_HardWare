@@ -1,0 +1,57 @@
+***** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******
+ Input File: c:\users\administrator\desktop\tamrin for sending\tamrin 2\cmos\buf
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   Administrator        HOSTNAME: IK-PC
+ lic: HOSTID: 000000000000         PID:      2164
+ lic: Using FLEXlm license file:
+ lic: 27000@elena
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid 000000000000
+ lic:
+ init: begin read circuit files,  cpu clock=  3.10E-02
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\XILINX\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\SIGNET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\PCI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\LIN_TECH\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\FET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\DIO\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\COMLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BURR_BRN\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BJT\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option post     =     2.00
+       option runlvl
+ init: end read circuit files,  cpu clock=  6.30E-02 memory=    149 kb
+ init: begin check errors,  cpu clock=  6.30E-02
+ init: end check errors,  cpu clock=  6.30E-02 memory=    156 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  6.30E-02
+       establish matrix -- done,  cpu clock=  7.80E-02 memory=    209 kb
+       re-order matrix -- done,  cpu clock=  7.80E-02 memory=    213 kb
+ init: end setup matrix,  cpu clock=  7.80E-02 memory=    257 kb
+ output: c:\users\administrator\desktop\tamrin for sending\tamrin 2\cmos\buffer.
+ sweep: dc dc0    begin, #sweeps= 111 cpu clock=  9.40E-02
+ sweep: dc dc0    end,  cpu clock=  1.09E-01 memory=    257 kb
+ dcop: begin dcop,  cpu clock=  1.09E-01
+ dcop: end dcop,  cpu clock=  1.09E-01 memory=    257 kb  tot_iter=       5
+ output: c:\users\administrator\desktop\tamrin for sending\tamrin 2\cmos\buffer.
+ sweep: tran tran0    begin, stop_t=  7.50E-08 #sweeps=7501 cpu clock=  1.25E-01
+ tran: time= 9.3293E-09 tot_iter=     151 conv_iter=      47 cpu clock= 1.41E-01
+ tran: time= 1.5677E-08 tot_iter=     272 conv_iter=      85 cpu clock= 1.41E-01
+ tran: time= 2.4330E-08 tot_iter=     284 conv_iter=      91 cpu clock= 1.41E-01
+ tran: time= 3.1640E-08 tot_iter=     290 conv_iter=      94 cpu clock= 1.56E-01
+ tran: time= 3.8201E-08 tot_iter=     294 conv_iter=      96 cpu clock= 1.56E-01
+ tran: time= 4.6513E-08 tot_iter=     396 conv_iter=     133 cpu clock= 1.72E-01
+ tran: time= 5.2674E-08 tot_iter=     514 conv_iter=     168 cpu clock= 1.72E-01
+ tran: time= 6.0097E-08 tot_iter=     528 conv_iter=     175 cpu clock= 1.72E-01
+ tran: time= 6.8693E-08 tot_iter=     536 conv_iter=     179 cpu clock= 1.87E-01
+ tran: time= 7.5000E-08 tot_iter=     540 conv_iter=     181 cpu clock= 1.87E-01
+ sweep: tran tran0    end,  cpu clock=  1.87E-01 memory=    259 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

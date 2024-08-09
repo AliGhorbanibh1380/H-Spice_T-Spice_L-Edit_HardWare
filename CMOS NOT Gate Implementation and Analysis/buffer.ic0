@@ -1,0 +1,31 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "15:10:28 01/19/2014 "
+* "netlist" "c:\users\administrator\desktop\tamrin for sending\tamrin 2\cmos\buffer.sp "
+* "runtitle" "** --------------------------------------**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ ina =   0.            
++ out =   1.0955        
++ out1 = 332.5039u       
++ out10 = 332.5039u       
++ out11 = 332.5039u       
++ out12 = 332.5039u       
++ out13 = 332.5039u       
++ out14 = 332.5039u       
++ out15 = 332.5039u       
++ out2 = 332.5039u       
++ out3 = 332.5039u       
++ out4 = 332.5039u       
++ out5 = 332.5039u       
++ out6 = 332.5039u       
++ out7 = 332.5039u       
++ out8 = 332.5039u       
++ out9 = 332.5039u       
++ vdd =   1.1000        
+***   END: Saved Operating Point ***                     
