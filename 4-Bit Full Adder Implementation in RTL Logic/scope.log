@@ -1,0 +1,65 @@
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+1212+92
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile {{C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin1/tamrin.tr0}} 1 openonly
+# PF:5
+GrXY:NewGraph
+# Graph0
+pf:read PF:5 v(ina0) v(ina1) v(ina2) v(ina3) v(inb0) v(inb1) v(inb2) v(inb3) v(inc) v(s0) v(s2) v(s1) v(s3)
+# WF:5:1 WF:5:2 WF:5:3 WF:5:4 WF:5:5 WF:5:6 WF:5:7 WF:5:8 WF:5:9 WF:5:10 WF:5:11 WF:5:12 WF:5:13
+Graph addsignal {WF:5:1 WF:5:2 WF:5:3 WF:5:4 WF:5:5 WF:5:6 WF:5:7 WF:5:8 WF:5:9 WF:5:10 WF:5:11 WF:5:12 WF:5:13} -region {new new new new new new new new new new new new new} -yview {real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y) real(y)} -xview {real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x) real(x)} -tracehi {2 2 2 2 2 2 2 2 2 2 2 2 2}
+# Signal0 Signal1 Signal2 Signal3 Signal4 Signal5 Signal6 Signal7 Signal8 Signal9 Signal10 Signal11 Signal12
+Mdi:Resize 1090 372
+Mdi:Move 34 34
+Mdi:ArrangeIcons
+wm geometry . 1920x998+-8+-8
+Mdi:Resize 1090 842
+Mdi:Move 34 34
+wm geometry .sigmgr._PF:5 200x331+1054+631
+wm geometry .sigmgr._PF:5 200x331+1058+632
+wm geometry .sigmgr._PF:5 200x331+1064+634
+wm geometry .sigmgr._PF:5 200x331+1074+638
+wm geometry .sigmgr._PF:5 200x331+1088+644
+wm geometry .sigmgr._PF:5 200x331+1111+656
+wm geometry .sigmgr._PF:5 200x331+1140+673
+wm geometry .sigmgr._PF:5 200x331+1178+694
+wm geometry .sigmgr._PF:5 200x331+1217+723
+wm geometry .sigmgr._PF:5 200x331+1257+756
+wm geometry .sigmgr._PF:5 200x331+1295+789
+wm geometry .sigmgr._PF:5 200x331+1326+820
+wm geometry .sigmgr._PF:5 200x331+1354+846
+wm geometry .sigmgr._PF:5 200x331+1370+864
+wm geometry .sigmgr._PF:5 200x331+1382+876
+wm geometry .sigmgr._PF:5 200x331+1391+885
+wm geometry .sigmgr._PF:5 200x331+1398+893
+wm geometry .sigmgr._PF:5 200x331+1400+896
+wm geometry .sigmgr._PF:5 200x331+1402+898
+wm geometry .sigmgr._PF:5 200x331+1402+900
+wm geometry .sigmgr._PF:5 200x331+1401+903
+wm geometry .sigmgr._PF:5 200x331+1398+908
+wm geometry .sigmgr._PF:5 200x331+1396+918
+wm geometry .sigmgr._PF:5 200x331+1392+928
+wm geometry .sigmgr._PF:5 200x331+1388+944
+wm geometry .sigmgr._PF:5 200x331+1381+963
+wm geometry .sigmgr._PF:5 200x331+1375+980
+wm geometry .sigmgr._PF:5 200x331+1370+999
+wm geometry .sigmgr._PF:5 200x331+1365+1016
+wm geometry .sigmgr._PF:5 200x331+1361+1023
+wm geometry .sigmgr._PF:5 200x331+1357+1023
+wm geometry .sigmgr._PF:5 200x331+1353+1023
+wm geometry .sigmgr._PF:5 200x331+1349+1023
+wm geometry .sigmgr._PF:5 200x331+1345+1023
+wm geometry .sigmgr._PF:5 200x331+1343+1023
+wm geometry .sigmgr._PF:5 200x331+1342+1023
+wm geometry .sigmgr._PF:5 200x331+1340+1023
+wm geometry .sigmgr._PF:5 200x331+1339+1023
+wm geometry .sigmgr._PF:5 200x331+1338+1023
+wm geometry .sigmgr._PF:5 200x331+1337+1023
+wm geometry .sigmgr._PF:5 200x331+1336+1023
+wm geometry .sigmgr._PF:5 200x331+1335+1023
+Mdi:Resize 1453 842
+Mdi:Move 34 34
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+.frame1.mdi.mdi8.work.graph0 save -file {C:/Users/Administrator/Desktop/Tamrin For Sending/Tamrin1/FullAdderRTL.png} -format png  -x 0 -y 0 -w 1451 -h 1298 -colormode color
